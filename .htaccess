@@ -1,0 +1,16 @@
+Options -Indexes
+
+# The imported logo file is a company-registration scan, not a public logo.
+<Files "logo_ites.jpg">
+  Require all denied
+</Files>
+
+# Do not expose repository metadata, imported prompts, or project configuration.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule (^|/)(?:\.git|\.local|\.agents|\.cache|attached_assets)(?:/|$) - [F,L,NC]
+</IfModule>
+
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
