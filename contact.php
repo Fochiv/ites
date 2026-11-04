@@ -137,7 +137,6 @@ require __DIR__ . '/includes/header.php';
         <div class="location-label"><small><?= e(t('contact_location_label')) ?></small><strong><?= e(t('contact_location_name')) ?></strong></div>
       </div>
       <div class="contact-location"><i class="bi bi-geo-alt" aria-hidden="true"></i><div><strong><?= e(t('contact_location_name')) ?></strong><span><?= e(t('contact_location_detail')) ?></span></div></div>
-      <div class="contact-config-note"><?= e(t('contact_config')) ?></div>
     </aside>
   </div>
 </section>

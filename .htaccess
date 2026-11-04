@@ -1,7 +1,8 @@
 Options -Indexes
 
-# The imported logo file is a company-registration scan, not a public logo.
-<Files "logo_ites.jpg">
+# The original uploaded logo copy is kept at the workspace root; serve its cropped
+# website asset from assets/images/ites-logo.jpg instead.
+<Files "logo_ites2.jpg">
   Require all denied
 </Files>
 

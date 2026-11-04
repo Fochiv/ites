@@ -26,25 +26,11 @@ $active = static fn(string $page): string => $currentPage === $page ? 'active' :
 </head>
 <body>
 <header class="site-header">
-  <div class="utility-bar">
-    <div class="container utility-inner">
-      <div class="utility-note"><i class="bi bi-geo-alt" aria-hidden="true"></i><span><?= e(t('location')) ?></span><span><?= e(t('utility')) ?></span></div>
-      <div class="lang-switch" aria-label="<?= $lang === 'fr' ? 'Choisir la langue' : 'Choose language' ?>">
-        <a href="<?= language_url('fr') ?>" class="<?= $lang === 'fr' ? 'active' : '' ?>" <?= $lang === 'fr' ? 'aria-current="page"' : '' ?>>FR</a>
-        <span aria-hidden="true">/</span>
-        <a href="<?= language_url('en') ?>" class="<?= $lang === 'en' ? 'active' : '' ?>" <?= $lang === 'en' ? 'aria-current="page"' : '' ?>>EN</a>
-      </div>
-    </div>
-  </div>
   <div class="main-nav">
     <div class="container nav-inner">
       <a class="brand" href="index.php<?= $lang === 'en' ? '?lang=en' : '' ?>" aria-label="I.T.E.S Consulting — <?= e(t('nav_home')) ?>">
-         <span class="brand-symbol" aria-hidden="true">ITES</span>
-        <span class="brand-text"><span class="brand-name">I.T.E.S</span><span class="brand-sub">CONSULTING</span></span>
+        <img class="brand-logo" src="assets/images/ites-logo.jpg" width="1150" height="720" alt="I.T.E.S Consulting — Innovation Training and Employment Services">
       </a>
-      <button class="nav-toggle" type="button" aria-label="<?= $lang === 'fr' ? 'Ouvrir le menu' : 'Open menu' ?>" data-open-label="<?= $lang === 'fr' ? 'Ouvrir le menu' : 'Open menu' ?>" data-close-label="<?= $lang === 'fr' ? 'Fermer le menu' : 'Close menu' ?>" aria-expanded="false" aria-controls="primary-navigation">
-        <i class="bi bi-list" aria-hidden="true"></i>
-      </button>
       <nav class="nav-links" id="primary-navigation" aria-label="<?= $lang === 'fr' ? 'Navigation principale' : 'Main navigation' ?>">
         <a class="<?= $active('index.php') ?>" href="index.php<?= $lang === 'en' ? '?lang=en' : '' ?>"><?= e(t('nav_home')) ?></a>
         <a class="<?= $active('about.php') ?>" href="about.php<?= $lang === 'en' ? '?lang=en' : '' ?>"><?= e(t('nav_about')) ?></a>
@@ -60,6 +46,16 @@ $active = static fn(string $page): string => $currentPage === $page ? 'active' :
         </div>
         <a class="btn-ites nav-cta" href="contact.php<?= $lang === 'en' ? '?lang=en' : '' ?>"><?= e(t('nav_cta')) ?> <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
       </nav>
+      <div class="nav-tools">
+        <div class="lang-switch" aria-label="<?= $lang === 'fr' ? 'Choisir la langue' : 'Choose language' ?>">
+          <a href="<?= language_url('fr') ?>" class="<?= $lang === 'fr' ? 'active' : '' ?>" <?= $lang === 'fr' ? 'aria-current="page"' : '' ?>>FR</a>
+          <span aria-hidden="true">/</span>
+          <a href="<?= language_url('en') ?>" class="<?= $lang === 'en' ? 'active' : '' ?>" <?= $lang === 'en' ? 'aria-current="page"' : '' ?>>EN</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="<?= $lang === 'fr' ? 'Ouvrir le menu' : 'Open menu' ?>" data-open-label="<?= $lang === 'fr' ? 'Ouvrir le menu' : 'Open menu' ?>" data-close-label="<?= $lang === 'fr' ? 'Fermer le menu' : 'Close menu' ?>" aria-expanded="false" aria-controls="primary-navigation">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
 </header>

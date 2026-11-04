@@ -6,7 +6,7 @@ $requestPath = rawurldecode((string) (parse_url($_SERVER['REQUEST_URI'] ?? '/', 
 if (
     preg_match('~(?:^|/)\.(?:[^/]+)(?:/|$)~', $requestPath) ||
     preg_match('~(?:^|/)(?:attached_assets|\.git|\.local|\.agents|\.cache)(?:/|$)~i', $requestPath) ||
-    preg_match('~(?:^|/)logo_ites\.jpg$~i', $requestPath)
+    preg_match('~(?:^|/)logo_ites(?:2)?\.jpg$~i', $requestPath)
 ) {
     http_response_code(404);
     exit('Not found');

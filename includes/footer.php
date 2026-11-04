@@ -4,8 +4,7 @@
     <div class="footer-main">
       <div class="footer-brand">
         <a class="brand" href="index.php<?= current_language() === 'en' ? '?lang=en' : '' ?>" aria-label="I.T.E.S Consulting">
-          <span class="brand-symbol" aria-hidden="true">ITES</span>
-          <span class="brand-text"><span class="brand-name">I.T.E.S</span><span class="brand-sub">CONSULTING</span></span>
+          <img class="brand-logo" src="assets/images/ites-logo.jpg" width="1150" height="720" alt="I.T.E.S Consulting — Innovation Training and Employment Services">
         </a>
         <p class="footer-description"><?= e(t('footer_description')) ?></p>
         <div class="footer-location"><i class="bi bi-geo-alt" aria-hidden="true"></i><?= e(t('location')) ?></div>
@@ -31,8 +30,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <?= date('Y') ?> I.T.E.S CONSULTING. <?= e(t('footer_rights')) ?></span>
-      <a href="#main-content"><?= e(t('back_top')) ?> <i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+      <span class="footer-copyright">© <?= date('Y') ?> I.T.E.S CONSULTING. <?= e(t('footer_rights')) ?></span>
     </div>
   </div>
 </footer>

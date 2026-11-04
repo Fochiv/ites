@@ -28,11 +28,12 @@ Then visit `http://127.0.0.1:8000/index.php`.
 - Shared translations/helpers: `includes/functions.php`
 - Shared page shell: `includes/header.php`, `includes/footer.php`
 - Hero image: `assets/images/ites-hero.jpg`
+- Company logo: `assets/images/ites-logo.jpg` (cropped display copy of the uploaded `logo_ites2.jpg`)
 
-Bootstrap 5, Bootstrap Icons and Google Fonts are loaded from their CDNs. The supplied `logo_ites.jpg` is retained at the project root. It is a scanned company-registration declaration rather than a brand logo and contains personal information, so it is not published as a public-facing logo. The site uses a typographic I.T.E.S wordmark until a dedicated approved logo file is supplied.
+Bootstrap 5, Bootstrap Icons and Google Fonts are loaded from their CDNs. The new official I.T.E.S logo is displayed in the navigation and footer. The original uploaded file remains at the workspace root, but only the optimized crop in `assets/images/` is served by the site.
 
 ## Contact form
 
 The contact form validates input on the server, uses a session CSRF token, a honeypot field and a per-session submission delay. It sends mail only when both a confirmed recipient and sender are configured in `includes/contact-config.php` (or with the `ITES_CONTACT_EMAIL` and `ITES_CONTACT_FROM` environment variables). PHP's `mail()` must also be configured by the host. If any setting is missing, the site explains that sending is unavailable rather than claiming success.
 
-The map is centered on Douala only; no street address or coordinates are specified. The imported `logo_ites.jpg` is a company-registration scan containing personal information, so it is not displayed and direct requests to it are blocked by the router and Apache rules. Replace it with an approved public logo when available.
+The map is centered on Douala only; no street address or coordinates are specified.
