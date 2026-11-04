@@ -104,7 +104,7 @@ img { max-width: 100%; }
 .btn-text:hover i { transform: translateX(4px); }
 
 /* Navigation */
-.site-header { position:sticky; top:0; z-index:20; background:rgba(251,250,247,.98); }
+.site-header { position:relative; z-index:20; background:rgba(251,250,247,.98); }
 .main-nav { border-bottom: 1px solid rgba(20,38,63,.08); }
 .nav-inner { position:relative; min-height:96px; display:flex; align-items:center; justify-content:space-between; gap:clamp(12px,1.6vw,24px); }
 .brand { display:flex; align-items:center; flex:0 0 auto; min-width:0; }
