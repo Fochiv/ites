@@ -47,11 +47,7 @@ $active = static fn(string $page): string => $currentPage === $page ? 'active' :
         <a class="btn-ites nav-cta" href="contact.php<?= $lang === 'en' ? '?lang=en' : '' ?>"><?= e(t('nav_cta')) ?> <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
       </nav>
       <div class="nav-tools">
-        <div class="lang-switch" aria-label="<?= $lang === 'fr' ? 'Choisir la langue' : 'Choose language' ?>">
-          <a href="<?= language_url('fr') ?>" class="<?= $lang === 'fr' ? 'active' : '' ?>" <?= $lang === 'fr' ? 'aria-current="page"' : '' ?>>FR</a>
-          <span aria-hidden="true">/</span>
-          <a href="<?= language_url('en') ?>" class="<?= $lang === 'en' ? 'active' : '' ?>" <?= $lang === 'en' ? 'aria-current="page"' : '' ?>>EN</a>
-        </div>
+        <a class="lang-toggle" lang="<?= e($lang) ?>" href="<?= language_url($lang === 'fr' ? 'en' : 'fr') ?>" aria-label="<?= $lang === 'fr' ? 'Passer en anglais' : 'Switch to French' ?>" title="<?= $lang === 'fr' ? 'Passer en anglais' : 'Switch to French' ?>"><?= strtoupper($lang) ?></a>
         <button class="nav-toggle" type="button" aria-label="<?= $lang === 'fr' ? 'Ouvrir le menu' : 'Open menu' ?>" data-open-label="<?= $lang === 'fr' ? 'Ouvrir le menu' : 'Open menu' ?>" data-close-label="<?= $lang === 'fr' ? 'Fermer le menu' : 'Close menu' ?>" aria-expanded="false" aria-controls="primary-navigation">
           <i class="bi bi-list" aria-hidden="true"></i>
         </button>
