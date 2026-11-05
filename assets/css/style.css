@@ -307,12 +307,18 @@ textarea.form-control { min-height:145px; resize:vertical; }
 .footer-links a:hover { color:#f09a6c; }
 .footer-location { color:rgba(255,255,255,.66); font-size:.78rem; }
 .footer-location i { margin-right:8px; color:#f09a6c; }
+.footer-contact-wrap { margin-top:22px; }
+.footer-contact-links { display:grid; gap:8px; }
+.footer-contact-method { padding:9px 11px; border-color:rgba(255,255,255,.16); background:rgba(255,255,255,.045); color:white; }
+.footer-contact-method:hover, .footer-contact-method:focus-visible { border-color:rgba(255,255,255,.34); background:rgba(255,255,255,.09); color:white; box-shadow:none; }
+.footer-contact-method .contact-method-icon { background:rgba(240,154,108,.14); color:#f09a6c; }
+.footer-contact-method.contact-method-whatsapp .contact-method-icon { background:rgba(37,211,102,.14); color:#50d47e; }
+.footer-contact-method .contact-method-text small { color:rgba(255,255,255,.62); }
+.footer-contact-method .contact-method-text strong { color:white; font-size:.8rem; }
 .footer-social-wrap { margin-top:22px; }
 .footer-social-title { display:block; margin-bottom:10px; color:rgba(255,255,255,.68); font-size:.69rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
 .footer-social { display:flex; align-items:center; gap:8px; }
 .footer-social-icon { display:flex; width:34px; height:34px; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,.2); border-radius:50%; color:rgba(255,255,255,.82); font-size:.82rem; }
-a.footer-social-icon { transition:background-color .2s ease, border-color .2s ease, color .2s ease; }
-a.footer-social-icon:hover, a.footer-social-icon:focus-visible { border-color:#25d366; background:#25d366; color:white; }
 .footer-legal { margin-top:18px; padding-top:16px; border-top:1px solid rgba(255,255,255,.13); color:rgba(255,255,255,.48); font-size:.68rem; line-height:1.6; }
 .footer-bottom { display:flex; align-items:center; justify-content:center; gap:15px; padding-top:19px; border-top:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.72); font-size:.72rem; text-align:center; }
 .back-to-top { position:fixed; right:22px; bottom:22px; z-index:15; width:44px; height:44px; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,.2); background:var(--orange); color:white; box-shadow:0 7px 20px rgba(20,38,63,.2); opacity:0; transform:translateY(8px); pointer-events:none; transition:opacity .2s ease, transform .2s ease; }
