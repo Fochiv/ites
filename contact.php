@@ -137,6 +137,16 @@ require __DIR__ . '/includes/header.php';
         <div class="location-label"><small><?= e(t('contact_location_label')) ?></small><strong><?= e(t('contact_location_name')) ?></strong></div>
       </div>
       <div class="contact-location"><i class="bi bi-geo-alt" aria-hidden="true"></i><div><strong><?= e(t('contact_location_name')) ?></strong><span><?= e(t('contact_location_detail')) ?></span></div></div>
+      <div class="contact-methods" aria-label="<?= e(t('contact_aside_title')) ?>">
+        <a class="contact-method" href="tel:+237696214027" aria-label="<?= e(t('contact_call') . ' +237 696 214 027') ?>">
+          <span class="contact-method-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
+          <span class="contact-method-text"><small><?= e(t('contact_call')) ?></small><strong>696 214 027</strong></span>
+        </a>
+        <a class="contact-method contact-method-whatsapp" href="https://wa.me/237654428607" aria-label="<?= e(t('contact_whatsapp') . ' 654 428 607') ?>" target="_blank" rel="noopener noreferrer">
+          <span class="contact-method-icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+          <span class="contact-method-text"><small><?= e(t('contact_whatsapp')) ?></small><strong>654 428 607</strong></span>
+        </a>
+      </div>
     </aside>
   </div>
 </section>

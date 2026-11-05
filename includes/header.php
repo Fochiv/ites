@@ -37,13 +37,6 @@ $active = static fn(string $page): string => $currentPage === $page ? 'active' :
         <a class="<?= $active('services.php') ?>" href="services.php<?= $lang === 'en' ? '?lang=en' : '' ?>"><?= e(t('nav_services')) ?></a>
         <a href="index.php<?= $lang === 'en' ? '?lang=en#domains' : '#domains' ?>"><?= e(t('nav_domains')) ?></a>
         <a class="<?= $active('contact.php') ?>" href="contact.php<?= $lang === 'en' ? '?lang=en' : '' ?>"><?= e(t('nav_contact')) ?></a>
-        <div class="nav-social" aria-label="<?= $lang === 'fr' ? 'Réseaux sociaux' : 'Social media' ?>">
-          <button class="social-button" type="button" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></button>
-          <button class="social-button" type="button" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></button>
-          <button class="social-button" type="button" aria-label="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></button>
-          <button class="social-button" type="button" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></button>
-          <button class="social-button" type="button" aria-label="Google"><i class="bi bi-google" aria-hidden="true"></i></button>
-        </div>
         <a class="btn-ites nav-cta" href="contact.php<?= $lang === 'en' ? '?lang=en' : '' ?>"><?= e(t('nav_cta')) ?> <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
       </nav>
       <div class="nav-tools">

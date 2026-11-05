@@ -8,6 +8,16 @@
         </a>
         <p class="footer-description"><?= e(t('footer_description')) ?></p>
         <div class="footer-location"><i class="bi bi-geo-alt" aria-hidden="true"></i><?= e(t('location')) ?></div>
+        <div class="footer-social-wrap">
+          <span class="footer-social-title"><?= e(t('footer_social_title')) ?></span>
+          <div class="footer-social" role="group" aria-label="<?= e(t('footer_social_title')) ?>">
+            <span class="footer-social-icon" role="img" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></span>
+            <a class="footer-social-icon" href="https://wa.me/237654428607" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+            <span class="footer-social-icon" role="img" aria-label="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></span>
+            <span class="footer-social-icon" role="img" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></span>
+            <span class="footer-social-icon" role="img" aria-label="Google"><i class="bi bi-google" aria-hidden="true"></i></span>
+          </div>
+        </div>
         <div class="footer-legal"><?= e(t('footer_legal')) ?></div>
       </div>
       <div class="footer-column">
